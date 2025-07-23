@@ -1,0 +1,39 @@
+# Системні файли Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Логи
+*.log
+
+# Службові файли VS Code
+.vscode/
+*.code-workspace
+
+# Кеш браузерів або тимчасові
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Git та Node
+node_modules/
+dist/
+build/
+
+# Mac OS (на випадок перенесення)
+.DS_Store
+
+# EXE, DLL, PAK тощо
+*.exe
+*.dll
+*.pak
+*.db
+*.user
+*.obj
+*.class
+*.psd
+
+# npm/yarn lock (якщо не використовуєш пакетні менеджери)
+package-lock.json
+yarn.lock
