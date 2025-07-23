@@ -6,7 +6,6 @@
 
 .container {
   max-width: 1440px;
-
   width: 100%;
 }
 
@@ -53,7 +52,8 @@ body {
   border: none;
 }
 
-.header__button--singin {
+.header__button--singin,
+.product__button--loadmore {
   background-color: #ffffff;
   color: #a27b5c;
   border: 1px solid #a27b5c;
@@ -118,4 +118,160 @@ button {
 
 .tab--active {
   border-block: 1px solid #121212;
+}
+
+/* PRODUCTS */
+
+.products__list {
+  display: flex;
+  gap: 24px;
+  margin: 0px 88px 48px;
+}
+
+.product__image {
+  width: 300px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.product__label {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding: 12px 20px;
+}
+
+.product__label--sale {
+  background-color: #f14c35;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+
+.product__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.product__delivery {
+  color: #7f7f7f;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.product__prices {
+  display: flex;
+}
+.product__new-price {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 8px;
+}
+
+.product__old-price {
+  margin: 6px 8px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-decoration: line-through;
+}
+
+.product__discount {
+  color: #a27b5c;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.product__navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #121212;
+}
+
+.footer__container {
+  padding: 56px 124px;
+}
+
+.footer__title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.footer__address {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer__contact {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+.footer__timetable {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+
+.footer__phone {
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer__timetable {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 24px;
+  margin: 32px 0px 80px;
+}
+
+.footer__privacy {
+  display: flex;
+  justify-content: space-between;
+  color: #a27b5c;
+}
+
+.privacy__footer {
+  display: flex;
+  gap: 10px;
 }
