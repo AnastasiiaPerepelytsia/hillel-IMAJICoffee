@@ -4,42 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="container header__container">
         <a class="header__logo" href="/">Coffee</a>
 
-        <div class="header__menu">
-          <nav class="menu">
-            <ul class="menu__list">
-              <li><a class="menu__link" href="/">Home</a></li>
-              <li><a class="menu__link" href="/">Story</a></li>
-              <li><a class="menu__link" href="/">Menu</a></li>
-              <li><a class="menu__link" href="/">Space</a></li>
-              <li><a class="menu__link" href="/">Community</a></li>
-              <li><a class="menu__link" href="/">News</a></li>
+        <div class="header__navigation">
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/">Story</a></li>
+              <li><a href="/">Menu</a></li>
+              <li><a href="/">Space</a></li>
+              <li><a href="/">Community</a></li>
+              <li><a href="/">News</a></li>
             </ul>
           </nav>
-          <button class="button header__button--cart">Cart(2)</button>
-          <button class="button header__button--singin">Sing in</button>
+          <div class="button__container">
+            <button class="button--primary">Cart(2)</button>
+            <button class="button--outline">Sing in</button>
+          </div>
         </div>
       </div>
     </header>
     <section class="container hero__container">
-      <h1 class="hero__title">Our menu</h1>
-      <p class="hero__desctiption">
+      <h1>Our menu</h1>
+      <p>
         IMAJI Coffee provides a variety of high quality coffee and drinks and
         flavors that are suitable for you to support and cheer up your day. We
         also provide coffee to accompany you at home along with the equipment.
       </p>
     </section>
+
     <main>
-      <div class="form">
+      <div>
         <div class="container form__container">
-          <input type="search" />
+          <label for="search">Search</label>
+          <input type="search" id="search" name="search" />
           <select name="" id="">
             <option value=""></option>
           </select>
@@ -48,14 +58,15 @@
           </select>
         </div>
       </div>
-      <div class="tabs">
-        <div class="container tabs__container">
-          <button class="tab">COFFEE AND BAVERAGE</button>
-          <button class="tab tab--active">FOOD AND SNACK</button>
-          <button class="tab">IMAJI COFFEE AT HOME</button>
+
+      <div>
+        <div class="container">
+          <button class="tab">Coffee and baveradge</button>
+          <button class="tab">Food and snack</button>
+          <button class="tab">Imaji coffee at home</button>
         </div>
       </div>
-      <div class="products">
+      <!-- <div class="products">
         <div class="container products__container">
           <ul class="products__list">
             <li class="products__item">
@@ -115,30 +126,31 @@
               </article>
             </li>
           </ul>
+          <div class="container product__navigation">
+            <button class="button product__button--loadmore">Load More</button>
+          </div>
         </div>
-        <div class="container product__navigation">
-          <button class="button product__button--loadmore">Load More</button>
-        </div>
-      </div>
+      </div> -->
     </main>
+
     <footer class="footer">
       <div class="container footer__container">
-        <h2 class="footer__title">Our Location</h2>
-        <address class="footer__address">
+        <h2>Our Location</h2>
+        <address>
           Jl. Bangkringan No 19, RT.11/RW.2, Kota Surabaya, 60124
         </address>
-        <p class="footer__contact">
-          <span class="bold"> Customer Service</span>
-          <a class="footer__phone" href="/">+6282-2876-6862</a>
+        <p>
+          Customer Service
+          <a href="/">+6282-2876-6862</a>
         </p>
-        <p class="footer__timetable">
-          <span class="bold">We Are Open from</span> Sun - Mon
+        <p>
+          We Are Open from Sun - Mon
           <time>10 AM</time> - <time>22 PM</time>
         </p>
 
         <hr />
 
-        <div class="container footer__icons">
+        <div class="footer__icons">
           <img src="icons/spotify.svg" alt="spotify icon" />
           <img src="icons/instagram.svg" alt="instagram icon" />
           <img src="icons/tiktok.svg" alt="tiktok icon" />
@@ -147,10 +159,10 @@
           <img src="icons/telegram.svg" alt="telegram icon" />
         </div>
 
-        <div class="container footer__privacy">
-          <p>© 2023 IMAJI COFFEE, All rights reserved</p>
+        <div class="footer__copy">
+          <p>&copy 2023 IMAJI COFFEE, All rights reserved</p>
 
-          <div class="privacy__footer">
+          <div>
             <p>Terms and Conditions</p>
             <p>|</p>
             <p>Privacy Policy</p>
